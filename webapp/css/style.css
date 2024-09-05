@@ -1,0 +1,274 @@
+/* Enter your custom styles here */
+/* Enter your custom styles here */
+.sapUiContentPadding {
+    background-color: rgb(240, 240, 233);
+}
+
+.bold-red-label {
+    font-weight: bold;
+
+    color: rgb(24, 13, 243);
+    padding: 5px;
+    border: 5px 5px;
+    cursor: pointer;
+    width: 60%;
+}
+
+.classParkinglot {
+    background-color: aliceblue;
+}
+
+.classpagehistory {
+    background-image: url("https://th.bing.com/th/id/OIP.3BDJSKV7rqU22Bh8PU-0cAHaFV?rs=1&pid=ImgDetMain");
+    background-size: cover;
+}
+
+/* Back Ground Color for Pages */
+.classpage1 {
+    background-image: url("https://img.freepik.com/premium-photo/logistics-company-using-ai-track-shipments-realtime_37714-3930.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: left;
+}
+
+.classtable2 {
+    background-color: rgb(255, 233, 198);
+
+}
+
+.classpage2 {
+    background-color: white
+}
+
+.classpage3 {
+    background-color: rgb(221, 221, 248);
+}
+
+.classpage4 {
+    background-color: rgb(245, 230, 225);
+}
+
+.classpage5 {
+    background-image: url("https://as2.ftcdn.net/v2/jpg/07/22/86/95/1000_F_722869555_EjjI80I708gdWBFvCDclkBSuKApbLC9H.jpg");
+    background-repeat: no-repeat;
+    background-size: auto
+}
+
+.classpage8 {
+    background-color: rgb(212, 244, 212);
+}
+
+/* Back Ground Color for Pages */
+
+.classassigned {
+    background-color: rgb(173, 201, 243);
+}
+
+.classemptytable {
+    background-color: rgb(204, 245, 198);
+}
+
+.classssubheader {
+    background-color: rgb(240, 245, 159);
+}
+
+.classformreserve {
+    background-color: antiquewhite;
+}
+
+.sapUiContentPaddingreserve {
+    background-color: rgb(157, 195, 240);
+}
+
+.classButton {
+    margin-right: 0 px;
+}
+
+.classButton1 {
+    margin-left: 50px;
+}
+
+.Bold {
+    font-weight: bold;
+    color: rgb(89, 18, 231);
+    margin-top: 10px;
+    margin-right: 0;
+}
+
+.Reserveheading {
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkmagenta;
+
+}
+
+.classreservedlots {
+    background-color: rgb(240, 218, 128);
+}
+
+.text {
+    color: rgb(226, 13, 63)
+}
+
+/* colors for second table header*/
+.classt2 {
+    color: blue
+}
+
+/* colors for Third table header*/
+.classt3 {
+    color: #e25310
+}
+
+.classp5 {
+    color: chocolate
+}
+
+/* colors for 7th table header*/
+.classp7 {
+    color: navy
+}
+
+.classsimpleform {
+    margin-top: 50px;
+    margin-right: 0;
+}
+
+.SimpleForm {
+    font-size: medium;
+    font-weight: bolder;
+    color: blue;
+
+}
+
+.customPopoverContent {
+    width: 400px;
+    height: 200px;
+    overflow: auto;
+    /* Optional: Add this to handle overflow content */
+    background-color: rgb(215, 243, 243);
+
+}
+
+.classnotificationdata {
+    background-color: #f3c4af;
+}
+
+.idclasshbox {
+    margin-top: 20px;
+}
+
+.classbtnasign {
+    margin-left: 20px;
+}
+
+.classbtnunasign {
+    margin-left: 30px;
+
+}
+
+.classbtnunclear {
+    margin-left: 30px;
+}
+
+
+
+.classsimpleformpage {
+    margin-top: 40px;
+    width: 100%;
+    margin-right: 90%;
+}
+
+.popOverClass {
+    width: 400px;
+    height: 200px;
+    overflow: auto;
+}
+
+.sapUiSmallMargin {
+    margin: 0.5rem;
+}
+
+.sapUiMediumMarginBottom {
+    margin-bottom: 1rem;
+}
+
+.sapUiTinyMarginEnd {
+    margin-right: 0.25rem;
+}
+
+.statusBox {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.greenBackground {
+    background-color: rgb(121, 233, 121);
+    /* Green */
+}
+
+.redBackground {
+    background-color: #e46c6c;
+    /* Red */
+}
+
+.yellowBackground {
+    background-color: rgb(232, 232, 99);
+    /* Yellow */
+}
+
+.parkingLotContainerBox {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    box-sizing: border-box;
+}
+
+.vehicleDetailsContainer {
+    padding: 15px;
+    background-color: #f4bfbf;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.vehicleDetailsBox {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    color:yellowgreen
+}
+
+.vehicleDetailsLabel {
+    color: #007acc; /* Color for labels */
+    font-weight: bold; /* Optional: Make labels bold */
+    margin-right: 10px; /* Space between label and value */
+}
+
+.vehicleDetailsValue {
+    color: #333; /* Color for values */
+}
+
+.vehicleDetailsBox {
+    padding: 10px; /* Optional: Add padding around the box */
+}
+
+.Heading{
+color:red;
+font-size:large;
+background-color: rgb(234, 220, 202);
+}
+
+.idclasstpk{
+    height: 100px;
+    width: 100px;
+}
+
+.sidecontent{
+    font-size: x-large;
+}

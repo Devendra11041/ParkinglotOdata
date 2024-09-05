@@ -1,0 +1,24 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Dialog
+        id="vehicleDetailsDialog"
+        title="Vehicle Details"
+        class="dataclasszero"
+        contentWidth="400px"
+        contentHeight="auto"
+        horizontalScrolling="false"
+        verticalScrolling="true"
+    >
+        <VBox id="dialogContentContainer" />
+        <endButton>
+            <Button
+                id="idbuttonpopover"
+                text="Close"
+                press=".onCloseDialogPress"
+                type="Negative"
+            />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

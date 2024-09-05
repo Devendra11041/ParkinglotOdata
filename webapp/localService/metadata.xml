@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="ZEWM_PARKINGLOT_SERVICE_SRV" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <Annotation Term="Core.SchemaVersion" String="1.0.0" xmlns="http://docs.oasis-open.org/odata/ns/edm"/>
+            <EntityType Name="Historydata" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Historyid"/>
+                </Key>
+                <Property Name="Driverphno" Type="Edm.String" sap:unicode="false" sap:label="DRIVER PHONE NUMBER"/>
+                <Property Name="Historyid" Type="Edm.String" Nullable="false" MaxLength="36" sap:unicode="false" sap:label="HISTORY ID"/>
+                <Property Name="Parkinglot" Type="Edm.String" MaxLength="6" sap:unicode="false" sap:label="PARKING LOT NUMBER"/>
+                <Property Name="Vehicleno" Type="Edm.String" MaxLength="10" sap:unicode="false" sap:label="VEHICEL NUMBER"/>
+                <Property Name="Drivername" Type="Edm.String" sap:unicode="false" sap:label="DRIVER NAME"/>
+                <Property Name="Vendorname" Type="Edm.String" sap:unicode="false" sap:label="VENDOR NAME"/>
+                <Property Name="Vehicletype" Type="Edm.String" MaxLength="15" sap:unicode="false" sap:label="VEHICEL TYPE"/>
+                <Property Name="Intime" Type="Edm.String" sap:unicode="false" sap:label="INTIME"/>
+                <Property Name="Outtime" Type="Edm.String" sap:unicode="false" sap:label="OUT TIME"/>
+            </EntityType>
+            <EntityType Name="vendordata" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Vehicleno"/>
+                </Key>
+                <Property Name="Notify" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="NOTIFY" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Mandt" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Client" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Vehicleno" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="VEHICLENO" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Drivername" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="DRIVERNAME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Driverphno" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="DRIVERPHNO" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Vehicletype" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="VEHICLETYPE" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Intime" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="INTIME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Outtime" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="OUTTIME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Vendorname" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="VENDORNAME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Vendorphno" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="VENDORPHNO" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="ZEWM_PARKINGLOT_SERVICE" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Parkingno"/>
+                </Key>
+                <Property Name="Parkingno" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false" sap:label="PARKING LOT NUMBER" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Processtype" Type="Edm.String" Nullable="false" MaxLength="15" sap:unicode="false" sap:label="PROCESS TYPE INWARD/OUTWARD" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false" sap:label="STATUS OF PARKING LOT" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="Vehicledata" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Vehicleno"/>
+                </Key>
+                <Property Name="Vehicleno" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="VEHICLE NUMBER" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Drivername" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="DRIVER NAME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Driverphno" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="DERIVER PHONE NUMBER" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Vehicletype" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="VEHICEL TYPE" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Intime" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="VEHICEL INTIME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Outtime" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="VEHICLE OUTTIME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Parkinglot" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false" sap:label="PARKINGLOT" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="Reservationdata" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Vehicleno"/>
+                </Key>
+                <Property Name="Notify" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="NOTIFY" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Driverphno" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="DRIVERPHNO" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Vehicleno" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="VEHICLENO" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Drivername" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="DRIVERNAME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Parkinglot" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false" sap:label="PARKINGLOT" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Vehicletype" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="VEHICLETYPE" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Intime" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="INTIME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Outtime" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="OUTTIME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Vendorname" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="VENDORNAME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Vendorphno" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="VENDORPHNO" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityContainer Name="ZEWM_PARKINGLOT_SERVICE_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="HistorydataSet" EntityType="ZEWM_PARKINGLOT_SERVICE_SRV.Historydata" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="vendordataSet" EntityType="ZEWM_PARKINGLOT_SERVICE_SRV.vendordata" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="ZEWM_PARKINGLOT_SERVICESet" EntityType="ZEWM_PARKINGLOT_SERVICE_SRV.ZEWM_PARKINGLOT_SERVICE" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="VehicledataSet" EntityType="ZEWM_PARKINGLOT_SERVICE_SRV.Vehicledata" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="ReservationdataSet" EntityType="ZEWM_PARKINGLOT_SERVICE_SRV.Reservationdata" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+            </EntityContainer>
+            <atom:link rel="self" href="https://VHCALAKECI.ARTIHCUS.COM:44306/sap/opu/odata/sap/ZEWM_PARKINGLOT_SERVICE_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="https://VHCALAKECI.ARTIHCUS.COM:44306/sap/opu/odata/sap/ZEWM_PARKINGLOT_SERVICE_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
