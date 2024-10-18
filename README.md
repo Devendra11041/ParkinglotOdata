@@ -7,7 +7,6 @@
 |**Generation Platform**<br>SAP Business Application Studio|
 |**Template Used**<br>simple|
 |**Service Type**<br>OData Url|
-|**Service URL**<br>https://vhcalakeci.artihcus.com:44306/sap/opu/odata/sap/ZEWM_PARKINGLOT_SERVICE_SRV|
 |**Module Name**<br>parkinglotsrv|
 |**Application Title**<br>Parking Lot App|
 |**Namespace**<br>com.app|
